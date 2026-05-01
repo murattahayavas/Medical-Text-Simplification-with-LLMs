@@ -1,8 +1,0 @@
-langchain-groq
-langchain-core
-langchain-openai
-langchain
-sentence-transformers
-faiss-cpu
-numpy
-python-dotenv

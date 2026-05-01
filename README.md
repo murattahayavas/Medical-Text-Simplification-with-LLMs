@@ -88,19 +88,19 @@ Three chart types are automatically generated for every run and saved to `Model/
 
 **Multi-Metric Line Chart** — tracks Ateşman, BERTScore, and SARI across all generated drafts:
 
-<img src="Model/plots/line_meta_llama_llama_4_scout_17b_16e_instruct_20260429_233031.png" alt="Line chart showing metric trends across drafts" width="700"/>
+<img src="assets/chart_line.png" alt="Line chart showing metric trends across drafts" width="700"/>
 
 ---
 
 **Radar Chart** — shows the multi-dimensional profile of the best-selected draft:
 
-<img src="Model/plots/radar_meta_llama_llama_4_scout_17b_16e_instruct_20260429_233031.png" alt="Radar chart showing readability, semantic fidelity, and simplification score" width="420"/>
+<img src="assets/chart_radar.png" alt="Radar chart showing readability, semantic fidelity, and simplification score" width="420"/>
 
 ---
 
 **Scatter Plot** — plots the readability–accuracy trade-off across all drafts:
 
-<img src="Model/plots/scatter_meta_llama_llama_4_scout_17b_16e_instruct_20260429_233031.png" alt="Scatter plot showing trade-off between Ateşman readability and BERTScore" width="560"/>
+<img src="assets/chart_scatter.png" alt="Scatter plot showing trade-off between Ateşman readability and BERTScore" width="560"/>
 
 ---
 
@@ -162,7 +162,7 @@ At runtime, the three most semantically similar training examples to the input r
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/murattahayavas/medical-text-simplification.git
+git clone https://github.com/murattahayavas/Medical-Text-Simplification-with-LLMs.git
 cd medical-text-simplification/Model
 
 # 2. Install Python dependencies
@@ -272,27 +272,4 @@ Medical Text Simplification/
 ├── klinik-metin-arayuzu-main/      # React/TypeScript frontend
 │   └── klinik-metin-arayuzu-main/
 │       └── src/
-│           └── components/
-│               ├── SimplifierTool/ # Live text simplification UI
-│               ├── Architecture/   # System architecture visualization
-│               ├── Metrics/        # Animated performance metrics
-│               ├── Features/       # Feature highlights
-│               └── ...
-│
-└── README.md
-```
-
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](Model/LICENSE) file for details.
-
----
-
-<div align="center">
-
-Built with ❤️ using Groq · LangChain · FAISS · FastAPI · React
-
-</div>
+│           └─�
