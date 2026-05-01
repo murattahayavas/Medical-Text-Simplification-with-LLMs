@@ -1,0 +1,185 @@
+/* ── Metrics Section ── */
+.metrics-section {
+  padding: 6rem 1rem 5rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Reuse section-header from Architecture — just ensure it's global or duplicated */
+.metrics-section .section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.metrics-section .section-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  background: rgba(96,165,250,0.1);
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(96,165,250,0.2);
+  margin-bottom: 1rem;
+}
+
+.metrics-section .section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.metrics-section .section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.metrics-section .section-subtitle strong {
+  color: var(--text-primary);
+}
+
+/* Counter Cards Grid */
+.metrics-counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.metric-counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem 2rem;
+  background: var(--surface-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.metric-counter-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.metric-counter-card__icon {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+}
+
+.metric-counter-card__icon.green {
+  color: #34d399;
+  background: rgba(52,211,153,0.1);
+}
+
+.metric-counter-card__icon.blue {
+  color: #60a5fa;
+  background: rgba(96,165,250,0.1);
+}
+
+.metric-counter-card__icon.purple {
+  color: #a78bfa;
+  background: rgba(167,139,250,0.1);
+}
+
+.metric-counter-card__numbers {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text-light), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.metric-counter-card__before {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: rgba(239,68,68,0.5);
+}
+
+.metric-counter-card__arrow {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.metric-counter-card__prefix {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.metric-counter-card__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+.metric-counter-card__desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Tag Bar */
+.metrics-tag-bar {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-xl);
+}
+
+.metrics-tag-bar__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.metrics-tag-bar__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.m-tag {
+  background: rgba(96,165,250,0.1);
+  border: 1px solid rgba(96,165,250,0.25);
+  color: #93c5fd;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}

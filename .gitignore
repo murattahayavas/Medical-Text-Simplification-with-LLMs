@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Sensitive files
+model/utils/api_keys.txt
+Model/utils/api_keys.txt
+.env
+!.env.example
+
+# Large data files
+model/data/data-1024/
+Model/data/data-1024/
+model/data/data.json
+model/data/data_final_1024.json
+Model/data/data.json
+Model/data/data_final_1024.json
+
+# Generated plots (kept in assets/ instead)
+model/plots/
+Model/plots/
+
+# Node
+node_modules/
+dist/
+
+# Misc
+.vscode/
+*.docx

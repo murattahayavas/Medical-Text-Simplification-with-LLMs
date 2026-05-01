@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+langchain-groq
+langchain-core
+sentence-transformers
+faiss-cpu
+numpy
+matplotlib
+bert-score
+pydantic

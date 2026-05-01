@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Dark Mode Colors */
+  --primary: #60a5fa;
+  --primary-hover: #3b82f6;
+  --bg-gradient-start: #020617;
+  --bg-gradient-via: #0f172a;
+  --bg-gradient-end: #0a0f25;
+  --surface-main: #000000;
+
+  --surface-card: rgba(15, 23, 42, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.03);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-light: #ffffff;
+  --border-light: rgba(255, 255, 255, 0.1);
+
+  --success: #34d399;
+  --success-bg: rgba(52, 211, 153, 0.1);
+  --accent: #818cf8;
+  --accent-bg: rgba(129, 140, 248, 0.1);
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-glass: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(96, 165, 250, 0.15);
+
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--surface-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Animations */
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(4px); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Section Divider — subtle separator between sections */
+.architecture-section,
+.metrics-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
